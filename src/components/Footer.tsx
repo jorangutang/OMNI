@@ -3,18 +3,18 @@ import { Mail, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 mt-12 sm:mt-16 md:mt-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
+    <footer className="bg-gray-50 border-t-2 border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 md:py-16">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-10">
           {/* Brand */}
           <div className="col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 text-black">
+            <div className="flex items-center space-x-3 mb-5">
+              <div className="w-11 h-11 text-black">
                 <img src="/logo.svg" alt="OMNI Logo" className="w-full h-full" />
               </div>
               <span className="font-display font-bold text-xl tracking-tight text-black">OMNI</span>
             </div>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm leading-relaxed">
               Operational Intelligence That Takes Action
             </p>
           </div>
@@ -60,13 +60,13 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-6 sm:pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-gray-600 text-xs sm:text-sm text-center md:text-left">
+        <div className="pt-8 sm:pt-10 border-t-2 border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-600 text-sm text-center md:text-left">
             © {new Date().getFullYear()} OMNI. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy" className="text-gray-600 hover:text-black transition-colors text-sm">Privacy Policy</Link>
-            <Link to="/terms" className="text-gray-600 hover:text-black transition-colors text-sm">Terms of Service</Link>
+          <div className="flex space-x-8">
+            <Link to="/privacy" className="text-gray-600 hover:text-black transition-colors text-sm font-medium">Privacy Policy</Link>
+            <Link to="/terms" className="text-gray-600 hover:text-black transition-colors text-sm font-medium">Terms of Service</Link>
           </div>
         </div>
       </div>

@@ -20,22 +20,22 @@ export function Solutions() {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-24 sm:pt-28 md:pt-32 pb-10 sm:pb-14 md:pb-16 relative bg-gray-50">
+      <section className="pt-32 sm:pt-36 md:pt-40 pb-16 sm:pb-20 md:pb-24 relative bg-gray-50">
         <TopoPattern />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-5xl mx-auto"
           >
-            <div className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-emerald-50 border border-emerald-200 rounded-full mb-4 sm:mb-6">
-              <span className="text-xs sm:text-sm font-mono text-emerald-800">What We Solve</span>
+            <div className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 bg-emerald-50 border border-emerald-200 rounded-full mb-6 sm:mb-8">
+              <span className="text-sm sm:text-base font-mono text-emerald-800 font-semibold">What We Solve</span>
             </div>
-            <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-4 sm:mb-6 text-black">
+            <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight mb-6 sm:mb-8 text-black leading-[1.1]">
               Problems Worth Solving
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-10 leading-relaxed">
               We focus on high-leverage problems where data already exists but isn't driving decisions. Start focused, prove value, then scale.
             </p>
             <nav className="flex flex-wrap gap-2 justify-center" aria-label="Jump to section">
@@ -49,7 +49,7 @@ export function Solutions() {
                   key={id}
                   type="button"
                   onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-black hover:bg-gray-100 rounded-full transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-black hover:bg-white/60 rounded-full transition-all border border-transparent hover:border-gray-200"
                 >
                   {label}
                 </button>
@@ -60,18 +60,18 @@ export function Solutions() {
       </section>
 
       {/* The Questions Section */}
-      <section id="questions" className="py-12 sm:py-16 md:py-24 bg-white relative scroll-mt-24">
+      <section id="questions" className="py-20 sm:py-24 md:py-32 bg-white relative scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center mb-8 sm:mb-12"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-6 tracking-tight text-black">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 sm:mb-8 tracking-tight text-black">
               Can You Answer These Questions?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-3 sm:mb-4">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               If you're struggling to answer these, or you know the answer but don't know what to do about it, we should talk.
             </p>
           </motion.div>
@@ -117,7 +117,7 @@ export function Solutions() {
       </section>
 
       {/* Use Case 1: Predictive Downtime Prevention (Featured) */}
-      <section id="featured" className="py-12 sm:py-16 md:py-24 relative bg-gray-50 scroll-mt-24">
+      <section id="featured" className="py-20 sm:py-24 md:py-32 relative bg-gray-50 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -217,7 +217,7 @@ export function Solutions() {
       </section>
 
       {/* Other Use Cases */}
-      <section id="use-cases" className="py-12 sm:py-16 md:py-24 bg-white scroll-mt-24">
+      <section id="use-cases" className="py-20 sm:py-24 md:py-32 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <GlassCard scan className="border-l-4 border-l-emerald-500">
@@ -278,28 +278,28 @@ export function Solutions() {
       </section>
 
       {/* CTA Section */}
-      <section id="cta" className="py-12 sm:py-16 md:py-24 bg-gray-50 scroll-mt-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="cta" className="py-20 sm:py-24 md:py-32 bg-gray-50 scroll-mt-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 md:p-12 text-center relative overflow-hidden"
+            className="bg-white border-2 border-gray-200 rounded-3xl p-8 sm:p-12 md:p-16 text-center relative overflow-hidden shadow-xl"
           >
             <TopoPattern />
             <div className="relative z-10">
-              <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 tracking-tight text-black">
+              <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 tracking-tight text-black leading-[1.1]">
                 Start With a Focused Engagement
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-10 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
                 Pick your highest-leverage problem. We'll scope a focused engagement, prove value, and scale from there.
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-black text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 group"
+                className="inline-flex items-center justify-center px-10 py-5 bg-black text-white font-semibold rounded-xl hover:opacity-90 hover:scale-105 transition-all duration-300 group text-lg shadow-lg shadow-black/10"
               >
                 Start a Conversation
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={22} />
               </Link>
             </div>
           </motion.div>
