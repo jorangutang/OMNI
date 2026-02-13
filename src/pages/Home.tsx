@@ -218,10 +218,10 @@ export function Home() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 sm:mb-4 text-black">
-                    Deterministic Solutions for Complex Data
+                    The Right AI for Each Layer of the Problem
                   </h3>
                   <p className="text-gray-600 text-sm sm:text-base">
-                    Generative AI is a Swiss Army knife: useful, but rarely the right tool when the job needs a scalpel. We focus on applied machine learning: domain-specific models, predictive analytics, and algorithmic optimisation tailored to your infrastructure. You get automated expertise, not just automated conversation.
+                    We pair applied machine learning with generative AI, each where it's strongest. ML models handle prediction: scoring operational risk, identifying root causes, and surfacing the drivers behind performance issues. GenAI handles action: drafting response plans, coordinating next steps, and preparing stakeholder communications so your team reviews and approves rather than writes from scratch. Together, they close the gap between knowing something is wrong and doing something about it.
                   </p>
                 </div>
               </div>
