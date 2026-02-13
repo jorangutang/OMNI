@@ -78,6 +78,7 @@ export function Solutions() {
 
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-5xl mx-auto">
             {[
+              "What is most likely to disrupt your operation in the next few days — and what should you do about it now?",
               "Why did performance drop, and what specifically caused it?",
               "Where is the real bottleneck in your operation right now?",
               "How much time was lost to avoidable delays, and what triggered them?",
@@ -143,7 +144,7 @@ export function Solutions() {
                       Predictive Downtime Prevention
                     </h2>
                     <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-5 sm:mb-8">
-                      Unplanned downtime is the number one value destroyer in any operation that depends on continuous processes
+                      When critical processes fail, throughput drops, recovery becomes harder to stabilise, and disruption cascades across teams. Industry data shows over two-thirds of industrial businesses experience unplanned outages at least monthly.
                     </p>
 
                     <div className="space-y-3 sm:space-y-4 mb-5 sm:mb-8">
@@ -157,13 +158,13 @@ export function Solutions() {
                         <div className="w-6 h-6 bg-emerald-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
                           <span className="text-xs text-emerald-700">✓</span>
                         </div>
-                        <p className="text-gray-600 text-sm sm:text-base">Causes cascading issues across connected systems</p>
+                        <p className="text-gray-600 text-sm sm:text-base">Causes cascading issues across maintenance and operations</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-6 h-6 bg-emerald-100 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
                           <span className="text-xs text-emerald-700">✓</span>
                         </div>
-                        <p className="text-gray-600 text-sm sm:text-base">Costs significant value per event in lost production</p>
+                        <p className="text-gray-600 text-sm sm:text-base">Typical unplanned outage costs run into six figures per hour in lost production</p>
                       </div>
                     </div>
                   </div>
@@ -172,7 +173,7 @@ export function Solutions() {
                     <div>
                       <h3 className="font-display font-bold text-xl sm:text-2xl mb-2 sm:mb-4 text-black">What We Build</h3>
                       <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
-                        Real-time risk scoring for critical assets across your operation, tailored to your specific environment and equipment.
+                        We connect your existing operational data into one place, then build intelligence on top of it — using AI to predict risk and turn predictions into actions your team controls.
                       </p>
                     </div>
 
@@ -184,8 +185,8 @@ export function Solutions() {
                             <Clock className="text-emerald-700" size={20} />
                           </div>
                           <div>
-                            <div className="font-semibold text-sm mb-1 text-black">Advance warning</div>
-                            <div className="text-gray-600 text-xs">Predict issues before they become emergencies</div>
+                            <div className="font-semibold text-sm mb-1 text-black">Risk scoring</div>
+                            <div className="text-gray-600 text-xs">Flags likely disruptions before they happen, with the probable cause attached</div>
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
@@ -193,8 +194,8 @@ export function Solutions() {
                             <Brain className="text-emerald-700" size={20} />
                           </div>
                           <div>
-                            <div className="font-semibold text-sm mb-1 text-black">Root cause classification</div>
-                            <div className="text-gray-600 text-xs">Understand the driver, not just the symptom</div>
+                            <div className="font-semibold text-sm mb-1 text-black">Automated response workflows</div>
+                            <div className="text-gray-600 text-xs">Pre-filled action plans, resource checks, and notifications through your existing systems</div>
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
@@ -202,8 +203,8 @@ export function Solutions() {
                             <Zap className="text-emerald-700" size={20} />
                           </div>
                           <div>
-                            <div className="font-semibold text-sm mb-1 text-black">Decision-ready action plans</div>
-                            <div className="text-gray-600 text-xs">What to check, what to stage, when to schedule</div>
+                            <div className="font-semibold text-sm mb-1 text-black">Operational baseline + scale plan</div>
+                            <div className="text-gray-600 text-xs">Live KPI dashboard, action log of interventions and outcomes, and an evidence-based plan to scale further</div>
                           </div>
                         </div>
                       </div>
