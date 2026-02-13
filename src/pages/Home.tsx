@@ -333,11 +333,12 @@ export function Home() {
                       <span className="font-mono text-xs sm:text-sm text-black font-semibold">Layer 3</span>
                       <div className="h-px flex-1 bg-gradient-to-r from-gray-300 to-transparent"></div>
                     </div>
-                    <h3 className="font-display font-bold text-lg sm:text-2xl mb-2 sm:mb-3 text-black">Decision Intelligence</h3>
+                    <h3 className="font-display font-bold text-lg sm:text-2xl mb-2 sm:mb-3 text-black">AI + Decision Intelligence</h3>
                     <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
                       KPIs, ML models, and risk scoring that answer the hard operational questions so you can act instead of dig.
                     </p>
                     <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">AI</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Predictive models</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Root cause analysis</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Anomaly detection</span>
@@ -366,12 +367,13 @@ export function Home() {
                       <span className="font-mono text-xs sm:text-sm text-gray-700 font-semibold">Layer 4</span>
                       <div className="h-px flex-1 bg-gradient-to-r from-gray-300 to-transparent"></div>
                     </div>
-                    <h3 className="font-display font-bold text-lg sm:text-2xl mb-2 sm:mb-3 text-black">Agentic Orchestration</h3>
+                    <h3 className="font-display font-bold text-lg sm:text-2xl mb-2 sm:mb-3 text-black">GenAI + Agentic Orchestration</h3>
                     <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
                       The layer that connects intelligence to action. Automated recommendations, intervention scheduling, and integration with your existing business systems. Human-in-the-loop by default.
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-black text-white rounded-full text-xs font-mono">Automated actions</span>
+                      <span className="px-3 py-1 bg-black text-white rounded-full text-xs font-mono">GenAI</span>
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Automated actions</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Human approval</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">System integration</span>
                     </div>
