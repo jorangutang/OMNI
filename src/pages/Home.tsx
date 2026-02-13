@@ -335,12 +335,13 @@ export function Home() {
                     </div>
                     <h3 className="font-display font-bold text-lg sm:text-2xl mb-2 sm:mb-3 text-black">Decision Intelligence</h3>
                     <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
-                      KPIs, ML models, and risk scoring that answer the hard operational questions so you can act instead of dig.
+                      We define the events that matter, baseline their frequency and cost, then deploy ML to predict risk before it becomes a problem. You get a risk score, the most probable cause, and estimated time to impact — backed by live KPI dashboards and alerting so the right people can act.
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Predictive models</span>
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Risk scoring</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Root cause analysis</span>
-                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Anomaly detection</span>
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">KPI dashboards</span>
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Alerting</span>
                     </div>
                   </div>
                 </div>
@@ -368,10 +369,11 @@ export function Home() {
                     </div>
                     <h3 className="font-display font-bold text-lg sm:text-2xl mb-2 sm:mb-3 text-black">Agentic Orchestration</h3>
                     <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
-                      The layer that connects intelligence to action. Automated recommendations, intervention scheduling, and integration with your existing business systems. Human-in-the-loop by default.
+                      When risk rises, GenAI drafts the response your team would write manually — action plans, resource checks, scheduling entries, and stakeholder communications — then pushes them into your existing operational systems. Your team reviews and approves before anything moves. Autonomy increases only after trust is proven.
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-black text-white rounded-full text-xs font-mono">Automated actions</span>
+                      <span className="px-3 py-1 bg-black text-white rounded-full text-xs font-mono">Response drafting</span>
+                      <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Resource checks</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">Human approval</span>
                       <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-mono text-gray-700">System integration</span>
                     </div>
