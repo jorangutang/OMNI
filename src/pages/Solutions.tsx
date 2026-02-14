@@ -319,7 +319,7 @@ export function Solutions() {
                   Real-Time Credit Decisioning Engine
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-4">
-                  A fintech lender needed fully automated credit decisions for short-term loans — fast enough that customers wouldn't drop off. We built an end-to-end MLOps platform on Databricks and AWS. Real-time pipelines ingested open banking transaction data, central bank records, and bankruptcy registers. A feature store engineered and served features on the fly, feeding continuously retrained ML models that scored risk and triggered automated lending decisions.
+                  At a fintech lender, we delivered a high-performance AI credit decisioning engine for short-term loans - designed to get funds into customers' accounts as fast as possible. We built an end-to-end MLOps platform on Databricks and AWS. Real-time pipelines ingested bank transaction data, central bank records, bankruptcy registers, and qualitative customer data. A feature store engineered and served features on the fly, feeding continuously retrained ML models that scored risk and triggered automated lending decisions.
                 </p>
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
                   <p className="text-sm font-semibold text-emerald-900">
@@ -352,11 +352,11 @@ export function Solutions() {
                   Unified Analytics Platform
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-4">
-                  A green energy operator had data fragmented across marketing tools, CRM, ERP, Google Analytics, and real-time telemetry from wind turbines and solar fields. No single source of truth. We centralised batch and real-time data into a unified data warehouse and lake, applied structured data modelling in layers, and built a semantic layer that made the data consumable across the organisation — powering self-service dashboards, ML feature engineering, and agentic AI interfaces.
+                  A green energy operator had data fragmented across marketing tools, CRM, ERP, accounting software, Google Sheets, and real-time telemetry from wind turbines and solar fields. No single source of truth. No self-service capability. Analytics were manual and slow, and the organisation wasn't making data-driven decisions. We centralised batch and real-time data into a unified data warehouse, applied structured data modelling leveraging the Medallion architecture, and built a semantic layer that made the data consumable across the organisation - enabling analysts to self-serve dashboards, executives to access real-time reporting, and data scientists to feed ML feature engineering and agentic AI interfaces for natural language data access.
                 </p>
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
                   <p className="text-sm font-semibold text-emerald-900">
-                    One platform powering exec dashboards, customer portals, ML pipelines, and AI-driven data interaction.
+                    One platform powering Analytics, exec dashboards, customer portals, ML pipelines, and AI-driven use cases - from raw data ingestion to business value.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
