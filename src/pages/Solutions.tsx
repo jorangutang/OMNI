@@ -327,7 +327,7 @@ export function Solutions() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {['MLOps', 'Databricks', 'AWS', 'Real-time Pipelines', 'Feature Store', 'Open Banking', 'ML Inference', 'CI/CD'].map((tag) => (
+                  {['MLOps', 'Databricks', 'AWS', 'Real-time Pipelines', 'Feature Store', 'ML Inference', 'CI/CD'].map((tag) => (
                     <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
                   ))}
                 </div>
@@ -352,11 +352,11 @@ export function Solutions() {
                   Unified Analytics Platform
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-4">
-                  A green energy operator had data fragmented across marketing tools, CRM, ERP, accounting software, Google Sheets, and real-time telemetry from wind turbines and solar fields. No single source of truth. No self-service capability. Analytics were manual and slow, and the organisation wasn't making data-driven decisions. We centralised batch and real-time data into a unified data warehouse, applied structured data modelling leveraging the Medallion architecture, and built a semantic layer that made the data consumable across the organisation - enabling analysts to self-serve dashboards, executives to access real-time reporting, and data scientists to feed ML feature engineering and agentic AI interfaces for natural language data access.
+                  A green energy operator had data fragmented across multiple business systems and real-time telemetry from wind turbines and solar fields. No single source of truth. No self-service capability. We centralised batch and real-time data into a Unified Data Platform, applied structured data modelling, and built a semantic layer that made the data consumable across the organisation - enabling self-serve dashboards, real-time reporting, ML feature engineering, and agentic AI interfaces for natural language data access.
                 </p>
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
                   <p className="text-sm font-semibold text-emerald-900">
-                    One platform powering Analytics, exec dashboards, customer portals, ML pipelines, and AI-driven use cases - from raw data ingestion to business value.
+                    One platform powering analytics, ML pipelines, and AI-driven use cases - from raw data ingestion to business value.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
