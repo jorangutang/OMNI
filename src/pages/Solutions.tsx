@@ -8,6 +8,8 @@ import {
   Brain,
   Clock,
   Zap,
+  Banknote,
+  Database,
 } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
@@ -43,6 +45,7 @@ export function Solutions() {
                 { id: 'questions', label: 'Questions' },
                 { id: 'featured', label: 'Featured use case' },
                 { id: 'use-cases', label: 'Use cases' },
+                { id: 'past-work', label: 'Past work' },
                 { id: 'cta', label: 'Contact' },
               ].map(({ id, label }) => (
                 <button
@@ -273,6 +276,96 @@ export function Solutions() {
                 </div>
               </div>
             </GlassCard>
+          </div>
+        </div>
+      </section>
+
+      {/* Past Work */}
+      <section id="past-work" className="py-12 sm:py-16 md:py-24 bg-gray-50 scroll-mt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-8 sm:mb-12"
+          >
+            <div className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-emerald-50 border border-emerald-200 rounded-full mb-4 sm:mb-6">
+              <span className="text-xs sm:text-sm font-mono text-emerald-800">Past Work</span>
+            </div>
+            <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-6 tracking-tight text-black">
+              Proven in Production
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              Real projects. Real data. Real outcomes.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            {/* Case 1: Credit Decisioning */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <GlassCard scan className="border-l-4 border-l-emerald-500 h-full">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Banknote className="text-emerald-700" size={20} />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">Fintech · MLOps</span>
+                </div>
+                <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 text-black">
+                  Real-Time Credit Decisioning Engine
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  A fintech lender needed fully automated credit decisions for short-term loans — fast enough that customers wouldn't drop off. We built an end-to-end MLOps platform on Databricks and AWS. Real-time pipelines ingested open banking transaction data, central bank records, and bankruptcy registers. A feature store engineered and served features on the fly, feeding continuously retrained ML models that scored risk and triggered automated lending decisions.
+                </p>
+                <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
+                  <p className="text-sm font-semibold text-emerald-900">
+                    Application to funds-in-account in under 20 minutes. Fully automated credit decisioning at scale.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {['MLOps', 'Databricks', 'AWS', 'Real-time Pipelines', 'Feature Store', 'Open Banking', 'ML Inference', 'CI/CD'].map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
+                  ))}
+                </div>
+              </GlassCard>
+            </motion.div>
+
+            {/* Case 2: Unified Analytics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <GlassCard scan className="border-l-4 border-l-emerald-500 h-full">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Database className="text-emerald-700" size={20} />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">Green Energy · Data & Analytics</span>
+                </div>
+                <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 text-black">
+                  Unified Analytics Platform
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  A green energy operator had data fragmented across marketing tools, CRM, ERP, Google Analytics, and real-time telemetry from wind turbines and solar fields. No single source of truth. We centralised batch and real-time data into a unified data warehouse and lake, applied structured data modelling in layers, and built a semantic layer that made the data consumable across the organisation — powering self-service dashboards, ML feature engineering, and agentic AI interfaces.
+                </p>
+                <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
+                  <p className="text-sm font-semibold text-emerald-900">
+                    One platform powering exec dashboards, customer portals, ML pipelines, and AI-driven data interaction.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {['Data Warehouse', 'Data Lake', 'Semantic Layer', 'Real-time Telemetry', 'Self-service Analytics', 'Gen AI', 'ETL/ELT'].map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
+                  ))}
+                </div>
+              </GlassCard>
+            </motion.div>
           </div>
         </div>
       </section>
