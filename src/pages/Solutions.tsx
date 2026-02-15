@@ -10,6 +10,7 @@ import {
   Zap,
   Banknote,
   Database,
+  Cloud,
 } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
@@ -300,7 +301,7 @@ export function Solutions() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Case 1: Credit Decisioning */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -352,15 +353,51 @@ export function Solutions() {
                   Unified Analytics Platform
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-4">
-                  A green energy operator had data fragmented across multiple business systems and real-time telemetry from wind turbines and solar fields. No single source of truth. No self-service capability. We centralised batch and real-time data into a Unified Data Platform, applied structured data modelling, and built a semantic layer that made the data consumable across the organisation - enabling self-serve dashboards, real-time reporting, ML feature engineering, and agentic AI interfaces for natural language data access.
+                  A green energy operator had data fragmented across marketing tools, CRM, ERP, accounting software, Google Sheets, and real-time telemetry from wind turbines and solar fields. No single source of truth. No self-service capability. Analytics were manual and slow, and the organisation wasn't making data-driven decisions. We centralised batch and real-time data into a unified data warehouse, applied structured data modelling leveraging the Medallion architecture, and built a semantic layer that made the data consumable across the organisation - enabling analysts to self-serve dashboards, executives to access real-time reporting, and data scientists to feed ML feature engineering and agentic AI interfaces for natural language data access.
                 </p>
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
                   <p className="text-sm font-semibold text-emerald-900">
-                    One platform powering analytics, ML pipelines, and AI-driven use cases - from raw data ingestion to business value.
+                    One platform powering Analytics, exec dashboards, customer portals, ML pipelines, and AI-driven use cases - from raw data ingestion to business value.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {['Data Warehouse', 'Data Lake', 'Semantic Layer', 'Real-time Telemetry', 'Self-service Analytics', 'Gen AI', 'ETL/ELT'].map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
+                  ))}
+                </div>
+              </GlassCard>
+            </motion.div>
+
+            {/* Case 3: Cloud Data & ML Platform */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              <GlassCard scan className="border-l-4 border-l-emerald-500 h-full">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Cloud className="text-emerald-700" size={20} />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">Big Tech · Data & MLOps · Product Management</span>
+                </div>
+                <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 text-black">
+                  Cloud Data & ML Platform Migration
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  At one of the world's largest dating platforms, we led the end-to-end delivery of a modern cloud data and ML platform on Google Cloud - replacing legacy on-prem infrastructure. We owned the product roadmap and drove delivery across three engineering teams spanning data engineering, analytics engineering, and MLOps. The data platform was central to the entire organisation - partnering with product teams, engineering teams, and principal and distinguished engineers to build solutions that served every function, from business intelligence to production ML systems.
+                </p>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  The platform included an event-driven streaming architecture handling 100 trillion events per year, batch ETL and ELT ingestion frameworks, structured data modelling layers, and a cloud-native MLOps environment for model training and serving. We replaced bespoke legacy systems with scalable SaaS products, built new data pipelines to service teams across the business, and delivered a platform that supported analytics, ML feature engineering, and reporting at scale. Sitting on the management team alongside senior executives, we translated high-level business requirements into technical deliverables and communicated constraints, timelines, and blockers back to leadership.
+                </p>
+                <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
+                  <p className="text-sm font-semibold text-emerald-900">
+                    Full product ownership and delivery of a scalable cloud data and ML platform - from roadmap to production.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {['GCP', 'MLOps', 'Event Streaming', 'ETL/ELT', 'Cloud Migration', 'Data Modelling', 'Product Management'].map((tag) => (
                     <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
                   ))}
                 </div>
