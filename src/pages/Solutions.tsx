@@ -301,7 +301,7 @@ export function Solutions() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {/* Case 1: Credit Decisioning */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -386,10 +386,7 @@ export function Solutions() {
                   Cloud Data & ML Platform Migration
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-4">
-                  At one of the world's largest dating platforms, we led the end-to-end delivery of a modern cloud data and ML platform on Google Cloud - replacing legacy on-prem infrastructure. We owned the product roadmap and drove delivery across three engineering teams spanning data engineering, analytics engineering, and MLOps. The data platform was central to the entire organisation - partnering with product teams, engineering teams, and principal and distinguished engineers to build solutions that served every function, from business intelligence to production ML systems.
-                </p>
-                <p className="text-gray-600 text-sm sm:text-base mb-4">
-                  The platform included an event-driven streaming architecture handling 100 trillion events per year, batch ETL and ELT ingestion frameworks, structured data modelling layers, and a cloud-native MLOps environment for model training and serving. We replaced bespoke legacy systems with scalable SaaS products, built new data pipelines to service teams across the business, and delivered a platform that supported analytics, ML feature engineering, and reporting at scale. Sitting on the management team alongside senior executives, we translated high-level business requirements into technical deliverables and communicated constraints, timelines, and blockers back to leadership.
+                  At one of the world's largest dating platforms, we owned the product roadmap and led delivery of a modern cloud data and ML platform on Google Cloud — replacing legacy on-prem infrastructure. We drove three engineering teams across data engineering, analytics engineering, and MLOps, partnering with product teams and principal engineers to build a platform central to the entire organisation. The platform included event-driven streaming handling 100 trillion events per year, batch ETL/ELT frameworks, structured data modelling, and a cloud-native MLOps environment. We replaced bespoke legacy systems with scalable SaaS products and sat on the management team translating business requirements into technical deliverables.
                 </p>
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
                   <p className="text-sm font-semibold text-emerald-900">
