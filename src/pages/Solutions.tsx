@@ -8,6 +8,9 @@ import {
   Brain,
   Clock,
   Zap,
+  Banknote,
+  Database,
+  Cloud,
 } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
@@ -43,6 +46,7 @@ export function Solutions() {
                 { id: 'questions', label: 'Questions' },
                 { id: 'featured', label: 'Featured use case' },
                 { id: 'use-cases', label: 'Use cases' },
+                { id: 'past-work', label: 'Past work' },
                 { id: 'cta', label: 'Contact' },
               ].map(({ id, label }) => (
                 <button
@@ -273,6 +277,129 @@ export function Solutions() {
                 </div>
               </div>
             </GlassCard>
+          </div>
+        </div>
+      </section>
+
+      {/* Past Work */}
+      <section id="past-work" className="py-12 sm:py-16 md:py-24 bg-gray-50 scroll-mt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-8 sm:mb-12"
+          >
+            <div className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-emerald-50 border border-emerald-200 rounded-full mb-4 sm:mb-6">
+              <span className="text-xs sm:text-sm font-mono text-emerald-800">Past Work</span>
+            </div>
+            <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-6 tracking-tight text-black">
+              Proven in Production
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              Real projects. Real data. Real outcomes.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            {/* Case 1: Credit Decisioning */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <GlassCard scan className="border-l-4 border-l-emerald-500 h-full">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Banknote className="text-emerald-700" size={20} />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">Fintech · MLOps</span>
+                </div>
+                <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 text-black">
+                  Real-Time Credit Decisioning Engine
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  At a fintech lender, we delivered a high-performance AI credit decisioning engine for short-term loans - designed to get funds into customers' accounts as fast as possible. We built an end-to-end MLOps platform on Databricks and AWS. Real-time pipelines ingested bank transaction data, central bank records, bankruptcy registers, and qualitative customer data. A feature store engineered and served features on the fly, feeding continuously retrained ML models that scored risk and triggered automated lending decisions.
+                </p>
+                <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
+                  <p className="text-sm font-semibold text-emerald-900">
+                    Application to funds-in-account in under 20 minutes. Fully automated credit decisioning at scale.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {['MLOps', 'Databricks', 'AWS', 'Real-time Pipelines', 'Feature Store', 'ML Inference', 'CI/CD'].map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
+                  ))}
+                </div>
+              </GlassCard>
+            </motion.div>
+
+            {/* Case 2: Unified Analytics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <GlassCard scan className="border-l-4 border-l-emerald-500 h-full">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Database className="text-emerald-700" size={20} />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">Green Energy · Data & Analytics</span>
+                </div>
+                <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 text-black">
+                  Unified Analytics Platform
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  A green energy operator had data fragmented across marketing tools, CRM, ERP, accounting software, Google Sheets, and real-time telemetry from wind turbines and solar fields. No single source of truth. No self-service capability. Analytics were manual and slow, and the organisation wasn't making data-driven decisions. We centralised batch and real-time data into a unified data warehouse, applied structured data modelling leveraging the Medallion architecture, and built a semantic layer that made the data consumable across the organisation - enabling analysts to self-serve dashboards, executives to access real-time reporting, and data scientists to feed ML feature engineering and agentic AI interfaces for natural language data access.
+                </p>
+                <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
+                  <p className="text-sm font-semibold text-emerald-900">
+                    One platform powering Analytics, exec dashboards, customer portals, ML pipelines, and AI-driven use cases - from raw data ingestion to business value.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {['Data Warehouse', 'Data Lake', 'Semantic Layer', 'Real-time Telemetry', 'Self-service Analytics', 'Gen AI', 'ETL/ELT'].map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
+                  ))}
+                </div>
+              </GlassCard>
+            </motion.div>
+
+            {/* Case 3: Cloud Data & ML Platform */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              <GlassCard scan className="border-l-4 border-l-emerald-500 h-full">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Cloud className="text-emerald-700" size={20} />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">Big Tech · Data & MLOps · Product Management</span>
+                </div>
+                <h3 className="font-display font-bold text-xl sm:text-2xl mb-3 text-black">
+                  Cloud Data & ML Platform Migration
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  At one of the world's largest dating platforms, we owned the product roadmap and led delivery of a modern cloud data and ML platform on Google Cloud - replacing legacy on-prem infrastructure. We drove three engineering teams across data engineering, analytics engineering, and MLOps, partnering with product teams and principal engineers to build a platform central to the entire organisation. The platform included event-driven streaming handling 100 trillion events per year, batch ETL/ELT frameworks, structured data modelling, and a cloud-native MLOps environment. We replaced bespoke legacy systems with scalable SaaS products and sat on the management team translating business requirements into technical deliverables.
+                </p>
+                <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 mb-4">
+                  <p className="text-sm font-semibold text-emerald-900">
+                    Full product ownership and delivery of a scalable cloud data and ML platform - from roadmap to production.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {['GCP', 'MLOps', 'Event Streaming', 'ETL/ELT', 'Cloud Migration', 'Data Modelling', 'Product Management'].map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded text-xs font-mono text-gray-700">{tag}</span>
+                  ))}
+                </div>
+              </GlassCard>
+            </motion.div>
           </div>
         </div>
       </section>
